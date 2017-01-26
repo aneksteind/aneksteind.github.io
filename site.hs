@@ -43,17 +43,10 @@ main = hakyll $ do
                 >>= relativizeUrls
 
 
-    match "index.html" $ do
-        route idRoute
-        compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
-            let indexCtx =
-                    listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Home"                `mappend`
-                    defaultContext
-
-            getResourceBody
-                >>= applyAsTemplate indexCtx
+    match "index.md" $ do
+        route $ setExtension "html"
+        compile $ pandocCompiler
+                >>= loadAndApplyTemplate "templates/post-list.html" postCtx
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
 
@@ -64,4 +57,9 @@ main = hakyll $ do
 postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
+    defaultContext
+
+indexCtx = 
+    listField "posts" postCtx (return posts) `mappend`
+    constField "title" "Home" `mappend`
     defaultContext
