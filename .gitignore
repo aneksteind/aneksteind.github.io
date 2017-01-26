@@ -1,0 +1,6 @@
+*.hs
+site
+_site
+_cache
+.DS_Store
+deploy
