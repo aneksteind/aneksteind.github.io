@@ -1,5 +1,6 @@
 ---
 title: S.P.Q.R.
+mathjax: on
 ---
 
 $$ \ln x = \int_{-\infty}^x \frac 1 y \, dy  $$
