@@ -2,6 +2,6 @@
 title: Home
 ---
 
-**Hello! I'm David Anekstein. I'm currently a student and software engineer in Orlando, Florida.**
+**Hello! I'm David Anekstein. I'm currently a student and software engineer.**
 
-In this blog you will find everything from book reviews to my documented learning of quantum computing. 
+In this blog you will find writings about all the things I have been learning and am interested in.
