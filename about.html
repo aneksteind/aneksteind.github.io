@@ -1,0 +1,65 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To Be Determined - about</title>
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="alternate" type="application/rss+xml" title="David Anekstein's blog - To Be Determined" href="https://aneksteind.github.io/rss.xml">
+    <link rel="alternate" type="application/atom+xml" title="David Anekstein's blog - To Be Determined" href="https://aneksteind.github.io/atom.xml">
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <a href="./">To Be Determined</a>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <div id="navigation">
+            <a href="./posts.html">Posts</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./publications.html">Publications</a>
+            <a href="./about.html">About</a>
+        </div>
+    </div>
+
+    <main role="main">
+        <h2 id="about-me">About Me</h2>
+<p>I’ve spent the last 8 years working on everything from reinforcement learning to embedded systems, robotics and task planning, compilers and program analysis, and now mobile development.</p>
+<p>Experiencing variety and depth is what I enjoy. I value privacy and build tools that empower myself and others to live life to its fullest.</p>
+<h2 id="contact-hire-me">Contact / Hire Me</h2>
+<p>email: <strong>work@davidanekstein.com</strong></p>
+<h2 id="resume">Resume</h2>
+<p><strong>NTL</strong>: 2023 - Present</p>
+<p>I run a company, along with my co-founder, specializing in iOS development and consulting. Our flagship product is called <a href="https://ntl.ai/reflect">Reflect</a>, an iOS toolkit for self-improvement and self-discovery.</p>
+<p><strong>Immunant</strong>: 2022 - 2024</p>
+<p>At Immunant, I focused on <a href="https://github.com/immunant/c2rust"><code>C2Rust's</code></a> static and dynamic analysis tools to transform unsafe Rust code into safe code, while also teaching Google’s Comprehensive Rust course to Google’s engineering teams.</p>
+<p><strong>Dexai Robotics</strong>: 2020 - 2022</p>
+<p>I implemented the entire robot task planning system and integrated it with the rest of the services necessary for the robot to serve food to people. You can see it in action in various <a href="https://www.dexai.com/media?wchannelid=jnfauunvc0&amp;wmediaid=29hmchrxm1">videos</a> online. I also developed a critical subsystem of the product end-to-end, the bowl retrieval mechanism, in collaboration with the mechanical team.</p>
+<p><strong>Boston Engineering</strong>: 2019 - 2020</p>
+<p>I worked on a medical device built around an nRF52840 SoC, integrating sensors and cameras, implementing state machines, and developing algorithms to ensure the device functioned properly under tight memory and latency constraints.</p>
+<p><strong>Systems and Technology Research</strong>: 2018 - 2019</p>
+<p>I was the primary software engineer for a multi-million dollar program, the goal of which was to create autonomous agents for remediating botnets. The domain was modeled as a POMDP, and I implemented POMDP solvers such as <a href="https://papers.nips.cc/paper_files/paper/2010/file/edfbe1afcf9246bb0d40eb4d8027d90f-Paper.pdf">POMCP</a> and enhanced the accuracy of the agent’s belief state particle generation with Gibbs sampling over a Baysian Network that modeled the probability space of its world state.</p>
+    </main>
+    <div id="footer">
+        <small><a href="https://aneksteind.github.io/rss.xml">RSS</a></small>
+        <small><a href="https://aneksteind.github.io/rss.xml">Atom</a></small>
+        <small>&copy; Copyright 2025, David Anekstein</small>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navigation = document.getElementById('navigation');
+        
+        menuToggle.addEventListener('click', function() {
+            navigation.classList.toggle('open');
+            menuToggle.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>
